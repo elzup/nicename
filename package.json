@@ -9,14 +9,42 @@
     "email": "guild0105@gmail.com",
     "url": "elzup.com"
   },
+  "main": "dist/index.js",
   "engines": {
     "node": ">=6"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src --out-dir dist"
   },
-  "files": ["index.js"],
-  "keywords": [""],
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.74.0"
+  },
+  "babel": {
+    "presets": [
+      "flow",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          }
+        }
+      ]
+    ]
+  }
 }

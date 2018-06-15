@@ -1,5 +1,5 @@
-const m = require('.')
+import m from './src'
 
-test('snapshot', () => {
-  expect(m('unicorn')).toMatchSnapshot()
+test('shorter than 6 value', () => {
+  expect(m('elzup')).toMatchSnapshot()
 })

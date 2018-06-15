@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot 1`] = `"unicorn & rainbows"`;
+exports[`shorter than 6 value 1`] = `
+Array [
+  Object {
+    "description": "6文字以上である",
+    "help": "5文字以下だと登録できないサイトがある",
+    "name": "length",
+    "rank": "A",
+  },
+]
+`;
