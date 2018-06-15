@@ -1,0 +1,22 @@
+{
+  "name": "nicename",
+  "version": "0.0.0",
+  "description": "is_good_name",
+  "license": "MIT",
+  "repository": "elzup/nicename",
+  "author": {
+    "name": "elzup",
+    "email": "guild0105@gmail.com",
+    "url": "elzup.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "files": ["index.js"],
+  "keywords": [""],
+  "dependencies": {},
+  "devDependencies": {}
+}
