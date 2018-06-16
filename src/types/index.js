@@ -1,15 +1,24 @@
 // @flow
 
-export type RankValue = 'C' | 'B' | 'A' | 'S'
-export type Rank = {
-  value: RankValue,
-  help: string,
-}
-
+export type Rank = 'C' | 'B' | 'A' | 'S'
 export type JudgeResult = {
-  description: string,
   rank: Rank,
   help: string,
 }
 
-export type Judge = (name: string) => JudgeResult
+export type JudgeInfo = {
+  id: string,
+  description: string,
+  notice: string,
+}
+export type JudgeFunc = (name: string) => JudgeResult
+
+export type Judge = {
+  info: JudgeInfo,
+  judge: JudgeFunc,
+}
+
+export type JudgeWithResult = {
+  info: JudgeInfo,
+  result: JudgeResult,
+}

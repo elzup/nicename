@@ -1,10 +1,14 @@
 // @flow
 
 import * as judges from './judges'
+import type { JudgeWithResult } from './types'
 
-const main = (name: string) => {
+function main(name: string): JudgeWithResult[] {
   const checks = [judges.lengthShortJudge]
-  const results = checks.map(f => f(name))
+  const results = checks.map(judge => ({
+    info: judge.info,
+    result: judge.judge(name),
+  }))
   return results
 }
 

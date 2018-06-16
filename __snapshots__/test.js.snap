@@ -1,43 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`shorter than 6 value 1`] = `
-Array [
-  Object {
+Object {
+  "info": Object {
     "description": "短すぎない",
-    "help": "5文字以下だと登録できないサイトがある",
-    "name": "length_short",
-    "rank": Object {
-      "help": "3文字以下である",
-      "value": "C",
-    },
+    "id": "length_short",
+    "notice": "5文字以下だと登録できないサイトがある",
   },
-]
+  "result": Object {
+    "help": "3文字以下である",
+    "rank": "C",
+  },
+}
 `;
 
 exports[`shorter than 6 value 2`] = `
-Array [
-  Object {
+Object {
+  "info": Object {
     "description": "短すぎない",
-    "help": "5文字以下だと登録できないサイトがある",
-    "name": "length_short",
-    "rank": Object {
-      "help": "4文字以上である",
-      "value": "A",
-    },
+    "id": "length_short",
+    "notice": "5文字以下だと登録できないサイトがある",
   },
-]
+  "result": Object {
+    "help": "4文字以上である",
+    "rank": "A",
+  },
+}
 `;
 
 exports[`shorter than 6 value 3`] = `
-Array [
-  Object {
+Object {
+  "info": Object {
     "description": "短すぎない",
-    "help": "5文字以下だと登録できないサイトがある",
-    "name": "length_short",
-    "rank": Object {
-      "help": "6文字以上である",
-      "value": "S",
-    },
+    "id": "length_short",
+    "notice": "5文字以下だと登録できないサイトがある",
   },
-]
+  "result": Object {
+    "help": "6文字以上である",
+    "rank": "S",
+  },
+}
 `;
