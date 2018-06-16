@@ -3,10 +3,41 @@
 exports[`shorter than 6 value 1`] = `
 Array [
   Object {
-    "description": "6文字以上である",
+    "description": "短すぎない",
     "help": "5文字以下だと登録できないサイトがある",
-    "name": "length",
-    "rank": "A",
+    "name": "length_short",
+    "rank": Object {
+      "help": "3文字以下である",
+      "value": "C",
+    },
+  },
+]
+`;
+
+exports[`shorter than 6 value 2`] = `
+Array [
+  Object {
+    "description": "短すぎない",
+    "help": "5文字以下だと登録できないサイトがある",
+    "name": "length_short",
+    "rank": Object {
+      "help": "4文字以上である",
+      "value": "A",
+    },
+  },
+]
+`;
+
+exports[`shorter than 6 value 3`] = `
+Array [
+  Object {
+    "description": "短すぎない",
+    "help": "5文字以下だと登録できないサイトがある",
+    "name": "length_short",
+    "rank": Object {
+      "help": "6文字以上である",
+      "value": "S",
+    },
   },
 ]
 `;
