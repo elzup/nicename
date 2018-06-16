@@ -7,10 +7,10 @@ export const lengthJudge: Judge = name => {
     if (name.length >= 6) {
       return 'S'
     }
-    if (name.length == 5) {
+    if (name.length >= 4) {
       return 'A'
     }
-    if (name.length == 4) {
+    if (name.length == 2) {
       return 'B'
     }
     return 'C'
