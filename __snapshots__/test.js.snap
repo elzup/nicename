@@ -87,6 +87,55 @@ Array [
 ]
 `;
 
+exports[`sign_count 1`] = `
+Array [
+  Object {
+    "info": Object {
+      "description": "記号が少ない",
+      "id": "sign_count",
+      "notice": "記号はユーザ名に使えない事が多い。",
+    },
+    "result": Object {
+      "help": "入っていない",
+      "rank": "S",
+    },
+  },
+  Object {
+    "info": Object {
+      "description": "記号が少ない",
+      "id": "sign_count",
+      "notice": "記号はユーザ名に使えない事が多い。",
+    },
+    "result": Object {
+      "help": "1個ある",
+      "rank": "A",
+    },
+  },
+  Object {
+    "info": Object {
+      "description": "記号が少ない",
+      "id": "sign_count",
+      "notice": "記号はユーザ名に使えない事が多い。",
+    },
+    "result": Object {
+      "help": "2個ある",
+      "rank": "B",
+    },
+  },
+  Object {
+    "info": Object {
+      "description": "記号が少ない",
+      "id": "sign_count",
+      "notice": "記号はユーザ名に使えない事が多い。",
+    },
+    "result": Object {
+      "help": "3個以上ある",
+      "rank": "C",
+    },
+  },
+]
+`;
+
 exports[`string_order 1`] = `
 Array [
   Object {

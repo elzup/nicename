@@ -1,6 +1,7 @@
 // @flow
 
 import type { Judge, JudgeResult, Rank } from './types'
+import * as utils from './utils'
 
 export const lengthShortJudge: Judge = {
   info: {
@@ -59,4 +60,29 @@ export const stringOrderJudge: Judge = {
   },
 }
 
-export const all = [lengthShortJudge, lengthLongJudge, stringOrderJudge]
+export const signCountJudge: Judge = {
+  info: {
+    id: 'sign_count',
+    description: '記号が少ない',
+    notice: '記号はユーザ名に使えない事が多い。',
+  },
+  judge: name => {
+    const c = utils.countSignChar(name)
+    if (c === 0) {
+      return { rank: 'S', help: '入っていない' }
+    } else if (c === 1) {
+      return { rank: 'A', help: '1個ある' }
+    } else if (c === 2) {
+      return { rank: 'B', help: '2個ある' }
+    } else {
+      return { rank: 'C', help: '3個以上ある' }
+    }
+  },
+}
+
+export const all = [
+  lengthShortJudge,
+  lengthLongJudge,
+  stringOrderJudge,
+  signCountJudge,
+]

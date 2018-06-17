@@ -27,8 +27,8 @@ test('string_order', () => {
   const id = 'string_order'
   const s = findById(m('_zzz'), id)
   const a = findById(m('elzup'), id)
-  const b = findById(m('ooo'.repeat(20)), id)
-  const c = findById(m('zombie'.repeat(21)), id)
+  const b = findById(m('ooo'), id)
+  const c = findById(m('zombie'), id)
   expect([s, a, b, c]).toMatchSnapshot()
   expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })
@@ -38,6 +38,16 @@ test('string_order uppercase', () => {
   expect(a.result.rank).toEqual('A')
   const b = findById(m('Oct'), id)
   expect(b.result.rank).toEqual('B')
+})
+
+test('sign_count', () => {
+  const id = 'sign_count'
+  const s = findById(m('toshino'), id)
+  const a = findById(m('n_zap'), id)
+  const b = findById(m('el-zu-p'), id)
+  const c = findById(m('z...ombie'), id)
+  expect([s, a, b, c]).toMatchSnapshot()
+  expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })
 
 test('argument error', () => {
