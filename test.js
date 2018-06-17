@@ -39,8 +39,6 @@ test('argument error', () => {
   expect(() => m(false)).toThrowError(/string/)
   expect(() => m(undefined)).toThrowError(/string/)
   expect(() => m()).toThrowError(/string/)
-})
 
-test('no error', () => {
-  expect(() => m('')).not.toThrowError()
+  expect(() => m('')).toThrowError(/empty/)
 })
