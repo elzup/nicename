@@ -46,8 +46,8 @@ export const stringOrderJudge: Judge = {
     notice: 'リストアップで上に出やすい。',
   },
   judge: name => {
-    const first = name[0]
-    if (!first || first < 'e') {
+    const first = name[0].toLowerCase()
+    if (first < 'e') {
       return { rank: 'S', help: 'eより早い' }
     } else if (first < 'l') {
       return { rank: 'A', help: 'lより早い' }

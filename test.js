@@ -32,6 +32,13 @@ test('string_order', () => {
   expect([s, a, b, c]).toMatchSnapshot()
   expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })
+test('string_order uppercase', () => {
+  const id = 'string_order'
+  const a = findById(m('Elzup'), id)
+  expect(a.result.rank).toEqual('A')
+  const b = findById(m('Oct'), id)
+  expect(b.result.rank).toEqual('B')
+})
 
 test('argument error', () => {
   expect(() => m(0)).toThrowError(/string/)
