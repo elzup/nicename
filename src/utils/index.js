@@ -13,3 +13,16 @@ export function isSignChar(v: string): boolean {
 export function isNumber(v: string): boolean {
   return '0' <= v && v <= '9'
 }
+
+export function hasAmbigousHebon(
+  str: string
+): { result: boolean, patterns: string[] } {
+  const libs = [['si', 'shi'], ['ti', 'chi'], ['tu', 'tsu']]
+  for (var i = 0; i < libs.length; i++) {
+    const ps = libs[i]
+    if (ps.some(p => str.indexOf(p) >= 0)) {
+      return { result: true, patterns: ps }
+    }
+  }
+  return { result: false, patterns: [] }
+}
