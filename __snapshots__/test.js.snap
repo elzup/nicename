@@ -97,3 +97,59 @@ Object {
   },
 }
 `;
+
+exports[`string_order 1`] = `
+Object {
+  "info": Object {
+    "description": "名前順が早い",
+    "id": "string_order",
+    "notice": "リストアップで上に出やすい。",
+  },
+  "result": Object {
+    "help": "rより遅い",
+    "rank": "C",
+  },
+}
+`;
+
+exports[`string_order 2`] = `
+Object {
+  "info": Object {
+    "description": "名前順が早い",
+    "id": "string_order",
+    "notice": "リストアップで上に出やすい。",
+  },
+  "result": Object {
+    "help": "sより早い",
+    "rank": "B",
+  },
+}
+`;
+
+exports[`string_order 3`] = `
+Object {
+  "info": Object {
+    "description": "名前順が早い",
+    "id": "string_order",
+    "notice": "リストアップで上に出やすい。",
+  },
+  "result": Object {
+    "help": "lより早い",
+    "rank": "A",
+  },
+}
+`;
+
+exports[`string_order 4`] = `
+Object {
+  "info": Object {
+    "description": "名前順が早い",
+    "id": "string_order",
+    "notice": "リストアップで上に出やすい。",
+  },
+  "result": Object {
+    "help": "eより早い",
+    "rank": "S",
+  },
+}
+`;

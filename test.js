@@ -18,3 +18,11 @@ test('length_long', () => {
   expect(findById(m('aaaaaaaaaa'), id)).toMatchSnapshot()
   expect(findById(m('ssssss'), id)).toMatchSnapshot()
 })
+
+test('string_order', () => {
+  const id = 'string_order'
+  expect(findById(m('zombie'), id)).toMatchSnapshot()
+  expect(findById(m('ooo'), id)).toMatchSnapshot()
+  expect(findById(m('elzup'), id)).toMatchSnapshot()
+  expect(findById(m('_zzz'), id)).toMatchSnapshot()
+})

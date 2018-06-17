@@ -39,3 +39,26 @@ export const lengthLongJudge: Judge = {
     return { rank: 'C', help: '21文字以上である' }
   },
 }
+
+export const stringOrderJudge: Judge = {
+  info: {
+    id: 'string_order',
+    description: '名前順が早い',
+    notice: 'リストアップで上に出やすい。',
+  },
+  judge: name => {
+    const first = name[0]
+    if (!first || first < 'e') {
+      return { rank: 'S', help: 'eより早い' }
+    }
+    if (first < 'l') {
+      return { rank: 'A', help: 'lより早い' }
+    }
+    if (first < 's') {
+      return { rank: 'B', help: 'sより早い' }
+    }
+    return { rank: 'C', help: 'rより遅い' }
+  },
+}
+
+export const all = [lengthShortJudge, lengthLongJudge, stringOrderJudge]
