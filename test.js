@@ -6,23 +6,29 @@ function findById(res, id) {
 
 test('length_short', () => {
   const id = 'length_short'
-  expect(findById(m('ccc'), id)).toMatchSnapshot()
-  expect(findById(m('aaaa'), id)).toMatchSnapshot()
-  expect(findById(m('ssssss'), id)).toMatchSnapshot()
+  const s = findById(m('ssssss'), id)
+  const a = findById(m('aaaa'), id)
+  const c = findById(m('ccc'), id)
+  expect([s, a, c]).toMatchSnapshot()
+  expect([s, a, c].map(v => v.result.rank)).toEqual(['S', 'A', 'C'])
 })
 
 test('length_long', () => {
   const id = 'length_long'
-  expect(findById(m('c'.repeat(21)), id)).toMatchSnapshot()
-  expect(findById(m('b'.repeat(20)), id)).toMatchSnapshot()
-  expect(findById(m('aaaaaaaaaa'), id)).toMatchSnapshot()
-  expect(findById(m('ssssss'), id)).toMatchSnapshot()
+  const s = findById(m('ssssss'), id)
+  const a = findById(m('aaaaaaaaaa'), id)
+  const b = findById(m('b'.repeat(20)), id)
+  const c = findById(m('c'.repeat(21)), id)
+  expect([s, a, b, c]).toMatchSnapshot()
+  expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })
 
 test('string_order', () => {
   const id = 'string_order'
-  expect(findById(m('zombie'), id)).toMatchSnapshot()
-  expect(findById(m('ooo'), id)).toMatchSnapshot()
-  expect(findById(m('elzup'), id)).toMatchSnapshot()
-  expect(findById(m('_zzz'), id)).toMatchSnapshot()
+  const s = findById(m('_zzz'), id)
+  const a = findById(m('elzup'), id)
+  const b = findById(m('ooo'.repeat(20)), id)
+  const c = findById(m('zombie'.repeat(21)), id)
+  expect([s, a, b, c]).toMatchSnapshot()
+  expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })

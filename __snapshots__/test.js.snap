@@ -1,155 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`length_long 1`] = `
-Object {
-  "info": Object {
-    "description": "長すぎない",
-    "id": "length_long",
-    "notice": "表示しやすい。覚えやすい。",
+Array [
+  Object {
+    "info": Object {
+      "description": "長すぎない",
+      "id": "length_long",
+      "notice": "表示しやすい。覚えやすい。",
+    },
+    "result": Object {
+      "help": "6文字以下である",
+      "rank": "S",
+    },
   },
-  "result": Object {
-    "help": "21文字以上である",
-    "rank": "C",
+  Object {
+    "info": Object {
+      "description": "長すぎない",
+      "id": "length_long",
+      "notice": "表示しやすい。覚えやすい。",
+    },
+    "result": Object {
+      "help": "10文字以下である",
+      "rank": "A",
+    },
   },
-}
-`;
-
-exports[`length_long 2`] = `
-Object {
-  "info": Object {
-    "description": "長すぎない",
-    "id": "length_long",
-    "notice": "表示しやすい。覚えやすい。",
+  Object {
+    "info": Object {
+      "description": "長すぎない",
+      "id": "length_long",
+      "notice": "表示しやすい。覚えやすい。",
+    },
+    "result": Object {
+      "help": "20文字以下である",
+      "rank": "B",
+    },
   },
-  "result": Object {
-    "help": "20文字以下である",
-    "rank": "B",
+  Object {
+    "info": Object {
+      "description": "長すぎない",
+      "id": "length_long",
+      "notice": "表示しやすい。覚えやすい。",
+    },
+    "result": Object {
+      "help": "21文字以上である",
+      "rank": "C",
+    },
   },
-}
-`;
-
-exports[`length_long 3`] = `
-Object {
-  "info": Object {
-    "description": "長すぎない",
-    "id": "length_long",
-    "notice": "表示しやすい。覚えやすい。",
-  },
-  "result": Object {
-    "help": "10文字以下である",
-    "rank": "A",
-  },
-}
-`;
-
-exports[`length_long 4`] = `
-Object {
-  "info": Object {
-    "description": "長すぎない",
-    "id": "length_long",
-    "notice": "表示しやすい。覚えやすい。",
-  },
-  "result": Object {
-    "help": "6文字以下である",
-    "rank": "S",
-  },
-}
+]
 `;
 
 exports[`length_short 1`] = `
-Object {
-  "info": Object {
-    "description": "短すぎない",
-    "id": "length_short",
-    "notice": "5文字以下だと登録できないサイトがある。",
+Array [
+  Object {
+    "info": Object {
+      "description": "短すぎない",
+      "id": "length_short",
+      "notice": "5文字以下だと登録できないサイトがある。",
+    },
+    "result": Object {
+      "help": "6文字以上である",
+      "rank": "S",
+    },
   },
-  "result": Object {
-    "help": "3文字以下である",
-    "rank": "C",
+  Object {
+    "info": Object {
+      "description": "短すぎない",
+      "id": "length_short",
+      "notice": "5文字以下だと登録できないサイトがある。",
+    },
+    "result": Object {
+      "help": "4文字以上である",
+      "rank": "A",
+    },
   },
-}
-`;
-
-exports[`length_short 2`] = `
-Object {
-  "info": Object {
-    "description": "短すぎない",
-    "id": "length_short",
-    "notice": "5文字以下だと登録できないサイトがある。",
+  Object {
+    "info": Object {
+      "description": "短すぎない",
+      "id": "length_short",
+      "notice": "5文字以下だと登録できないサイトがある。",
+    },
+    "result": Object {
+      "help": "3文字以下である",
+      "rank": "C",
+    },
   },
-  "result": Object {
-    "help": "4文字以上である",
-    "rank": "A",
-  },
-}
-`;
-
-exports[`length_short 3`] = `
-Object {
-  "info": Object {
-    "description": "短すぎない",
-    "id": "length_short",
-    "notice": "5文字以下だと登録できないサイトがある。",
-  },
-  "result": Object {
-    "help": "6文字以上である",
-    "rank": "S",
-  },
-}
+]
 `;
 
 exports[`string_order 1`] = `
-Object {
-  "info": Object {
-    "description": "名前順が早い",
-    "id": "string_order",
-    "notice": "リストアップで上に出やすい。",
+Array [
+  Object {
+    "info": Object {
+      "description": "名前順が早い",
+      "id": "string_order",
+      "notice": "リストアップで上に出やすい。",
+    },
+    "result": Object {
+      "help": "eより早い",
+      "rank": "S",
+    },
   },
-  "result": Object {
-    "help": "rより遅い",
-    "rank": "C",
+  Object {
+    "info": Object {
+      "description": "名前順が早い",
+      "id": "string_order",
+      "notice": "リストアップで上に出やすい。",
+    },
+    "result": Object {
+      "help": "lより早い",
+      "rank": "A",
+    },
   },
-}
-`;
-
-exports[`string_order 2`] = `
-Object {
-  "info": Object {
-    "description": "名前順が早い",
-    "id": "string_order",
-    "notice": "リストアップで上に出やすい。",
+  Object {
+    "info": Object {
+      "description": "名前順が早い",
+      "id": "string_order",
+      "notice": "リストアップで上に出やすい。",
+    },
+    "result": Object {
+      "help": "sより早い",
+      "rank": "B",
+    },
   },
-  "result": Object {
-    "help": "sより早い",
-    "rank": "B",
+  Object {
+    "info": Object {
+      "description": "名前順が早い",
+      "id": "string_order",
+      "notice": "リストアップで上に出やすい。",
+    },
+    "result": Object {
+      "help": "rより遅い",
+      "rank": "C",
+    },
   },
-}
-`;
-
-exports[`string_order 3`] = `
-Object {
-  "info": Object {
-    "description": "名前順が早い",
-    "id": "string_order",
-    "notice": "リストアップで上に出やすい。",
-  },
-  "result": Object {
-    "help": "lより早い",
-    "rank": "A",
-  },
-}
-`;
-
-exports[`string_order 4`] = `
-Object {
-  "info": Object {
-    "description": "名前順が早い",
-    "id": "string_order",
-    "notice": "リストアップで上に出やすい。",
-  },
-  "result": Object {
-    "help": "eより早い",
-    "rank": "S",
-  },
-}
+]
 `;
