@@ -6,7 +6,7 @@ import * as utils from './utils'
 export const lengthShortJudge: Judge = {
   info: {
     id: 'length_short',
-    description: '短すぎない',
+    description: '短すぎないと良い',
     notice: '5文字以下だと登録できないサイトがある。',
   },
   judge: name => {
@@ -23,7 +23,7 @@ export const lengthShortJudge: Judge = {
 export const lengthLongJudge: Judge = {
   info: {
     id: 'length_long',
-    description: '長すぎない',
+    description: '長すぎないと良い',
     notice: '表示しやすい。覚えやすい。',
   },
   judge: name => {
@@ -43,7 +43,7 @@ export const lengthLongJudge: Judge = {
 export const stringOrderJudge: Judge = {
   info: {
     id: 'string_order',
-    description: '名前順が早い',
+    description: '名前順が早いと良い',
     notice: 'リストアップで上に出やすい。',
   },
   judge: name => {
@@ -63,8 +63,9 @@ export const stringOrderJudge: Judge = {
 export const signCountJudge: Judge = {
   info: {
     id: 'sign_count',
-    description: '記号が少ない',
-    notice: '記号はユーザ名に使えない事が多い。',
+    description: '記号が少ないと良い',
+    notice:
+      '記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。',
   },
   judge: name => {
     const c = utils.countSignChar(name)

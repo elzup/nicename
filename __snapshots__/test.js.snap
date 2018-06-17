@@ -4,7 +4,7 @@ exports[`length_long 1`] = `
 Array [
   Object {
     "info": Object {
-      "description": "長すぎない",
+      "description": "長すぎないと良い",
       "id": "length_long",
       "notice": "表示しやすい。覚えやすい。",
     },
@@ -15,7 +15,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "長すぎない",
+      "description": "長すぎないと良い",
       "id": "length_long",
       "notice": "表示しやすい。覚えやすい。",
     },
@@ -26,7 +26,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "長すぎない",
+      "description": "長すぎないと良い",
       "id": "length_long",
       "notice": "表示しやすい。覚えやすい。",
     },
@@ -37,7 +37,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "長すぎない",
+      "description": "長すぎないと良い",
       "id": "length_long",
       "notice": "表示しやすい。覚えやすい。",
     },
@@ -53,7 +53,7 @@ exports[`length_short 1`] = `
 Array [
   Object {
     "info": Object {
-      "description": "短すぎない",
+      "description": "短すぎないと良い",
       "id": "length_short",
       "notice": "5文字以下だと登録できないサイトがある。",
     },
@@ -64,7 +64,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "短すぎない",
+      "description": "短すぎないと良い",
       "id": "length_short",
       "notice": "5文字以下だと登録できないサイトがある。",
     },
@@ -75,7 +75,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "短すぎない",
+      "description": "短すぎないと良い",
       "id": "length_short",
       "notice": "5文字以下だと登録できないサイトがある。",
     },
@@ -91,9 +91,9 @@ exports[`sign_count 1`] = `
 Array [
   Object {
     "info": Object {
-      "description": "記号が少ない",
+      "description": "記号が少ないと良い",
       "id": "sign_count",
-      "notice": "記号はユーザ名に使えない事が多い。",
+      "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
       "help": "入っていない",
@@ -102,9 +102,9 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "記号が少ない",
+      "description": "記号が少ないと良い",
       "id": "sign_count",
-      "notice": "記号はユーザ名に使えない事が多い。",
+      "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
       "help": "1個ある",
@@ -113,9 +113,9 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "記号が少ない",
+      "description": "記号が少ないと良い",
       "id": "sign_count",
-      "notice": "記号はユーザ名に使えない事が多い。",
+      "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
       "help": "2個ある",
@@ -124,9 +124,9 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "記号が少ない",
+      "description": "記号が少ないと良い",
       "id": "sign_count",
-      "notice": "記号はユーザ名に使えない事が多い。",
+      "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
       "help": "3個以上ある",
@@ -140,7 +140,7 @@ exports[`string_order 1`] = `
 Array [
   Object {
     "info": Object {
-      "description": "名前順が早い",
+      "description": "名前順が早いと良い",
       "id": "string_order",
       "notice": "リストアップで上に出やすい。",
     },
@@ -151,7 +151,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "名前順が早い",
+      "description": "名前順が早いと良い",
       "id": "string_order",
       "notice": "リストアップで上に出やすい。",
     },
@@ -162,7 +162,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "名前順が早い",
+      "description": "名前順が早いと良い",
       "id": "string_order",
       "notice": "リストアップで上に出やすい。",
     },
@@ -173,7 +173,7 @@ Array [
   },
   Object {
     "info": Object {
-      "description": "名前順が早い",
+      "description": "名前順が早いと良い",
       "id": "string_order",
       "notice": "リストアップで上に出やすい。",
     },
