@@ -32,3 +32,15 @@ test('string_order', () => {
   expect([s, a, b, c]).toMatchSnapshot()
   expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })
+
+test('argument error', () => {
+  expect(() => m(0)).toThrowError(/string/)
+  expect(() => m(null)).toThrowError(/string/)
+  expect(() => m(false)).toThrowError(/string/)
+  expect(() => m(undefined)).toThrowError(/string/)
+  expect(() => m()).toThrowError(/string/)
+})
+
+test('no error', () => {
+  expect(() => m('')).not.toThrowError()
+})
