@@ -81,9 +81,28 @@ export const signCountJudge: Judge = {
   },
 }
 
+export const AmbiguityJudge: Judge = {
+  info: {
+    id: 'ambiguity',
+    description: 'あいまいなパターンが無いと良い',
+    notice: '「shi」や「si」は h を入れるかどうかを覚えにくい。',
+  },
+  judge: name => {
+    const res = utils.hasAmbigousHebon(name)
+    if (!res.result) {
+      return { rank: 'S', help: '入っていない' }
+    }
+    return {
+      rank: 'A',
+      help: `${res.patterns.map(v => `「${v}」`).join('と')}は間違えやすい`,
+    }
+  },
+}
+
 export const all = [
   lengthShortJudge,
   lengthLongJudge,
   stringOrderJudge,
   signCountJudge,
+  AmbiguityJudge,
 ]

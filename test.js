@@ -50,6 +50,14 @@ test('sign_count', () => {
   expect([s, a, b, c].map(v => v.result.rank)).toEqual(['S', 'A', 'B', 'C'])
 })
 
+test('ambiguity', () => {
+  const id = 'ambiguity'
+  const s = findById(m('elzup'), id)
+  const a = findById(m('toshino'), id)
+  expect([s, a]).toMatchSnapshot()
+  expect([s, a].map(v => v.result.rank)).toEqual(['S', 'A'])
+})
+
 test('argument error', () => {
   expect(() => m(0)).toThrowError(/string/)
   expect(() => m(null)).toThrowError(/string/)
