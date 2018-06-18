@@ -13,7 +13,7 @@ export const lengthShortJudge: Judge = {
     if (name.length >= 6) {
       return { rank: 'S', help: '6文字以上である' }
     } else if (name.length >= 4) {
-      return { rank: 'A', help: '4文字以上である' }
+      return { rank: 'A', help: '4,5文字である' }
     } else {
       return { rank: 'C', help: '3文字以下である' }
     }
@@ -31,9 +31,9 @@ export const lengthLongJudge: Judge = {
     if (name.length <= 6) {
       return { rank: 'S', help: '6文字以下である' }
     } else if (name.length <= 10) {
-      return { rank: 'A', help: '10文字以下である' }
+      return { rank: 'A', help: '7文字以上10文字以下である' }
     } else if (name.length <= 20) {
-      return { rank: 'B', help: '20文字以下である' }
+      return { rank: 'B', help: '10文字以上20文字以下である' }
     } else {
       return { rank: 'C', help: '21文字以上である' }
     }
@@ -49,13 +49,13 @@ export const stringOrderJudge: Judge = {
   judge: name => {
     const first = name[0].toLowerCase()
     if (first < 'e') {
-      return { rank: 'S', help: 'eより早い' }
+      return { rank: 'S', help: 'eより前である' }
     } else if (first < 'l') {
-      return { rank: 'A', help: 'lより早い' }
+      return { rank: 'A', help: 'e以降かつlより前である' }
     } else if (first < 's') {
-      return { rank: 'B', help: 'sより早い' }
+      return { rank: 'B', help: 'l以降かつsより前である' }
     } else {
-      return { rank: 'C', help: 'rより遅い' }
+      return { rank: 'C', help: 's以降である' }
     }
   },
 }

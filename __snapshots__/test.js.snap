@@ -47,7 +47,7 @@ Array [
       "notice": "表示しやすい。覚えやすい。",
     },
     "result": Object {
-      "help": "10文字以下である",
+      "help": "7文字以上10文字以下である",
       "rank": "A",
     },
   },
@@ -58,7 +58,7 @@ Array [
       "notice": "表示しやすい。覚えやすい。",
     },
     "result": Object {
-      "help": "20文字以下である",
+      "help": "10文字以上20文字以下である",
       "rank": "B",
     },
   },
@@ -96,7 +96,7 @@ Array [
       "notice": "5文字以下だと登録できないサイトがある。",
     },
     "result": Object {
-      "help": "4文字以上である",
+      "help": "4,5文字である",
       "rank": "A",
     },
   },
@@ -172,7 +172,7 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "eより早い",
+      "help": "eより前である",
       "rank": "S",
     },
   },
@@ -183,7 +183,7 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "lより早い",
+      "help": "e以降かつlより前である",
       "rank": "A",
     },
   },
@@ -194,7 +194,7 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "sより早い",
+      "help": "l以降かつsより前である",
       "rank": "B",
     },
   },
@@ -205,7 +205,7 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "rより遅い",
+      "help": "s以降である",
       "rank": "C",
     },
   },
