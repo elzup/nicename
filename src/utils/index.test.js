@@ -6,6 +6,13 @@ test('countSignChar', () => {
   expect(m.countSignChar('`~!@#$%^&*()_+')).toEqual(14)
   expect(m.countSignChar('12345')).toEqual(0)
 })
+test('countSignChar', () => {
+  expect(m.isSignChar('~')).toEqual(true)
+  expect(m.isSignChar('-')).toEqual(true)
+  expect(m.isSignChar('_')).toEqual(true)
+  expect(m.isSignChar('0')).toEqual(false)
+  expect(m.isSignChar('a')).toEqual(false)
+})
 
 test('hasAmbigousHebon', () => {
   expect(m.hasAmbigousHebon('elzup')).toEqual({ result: false, patterns: [] })
