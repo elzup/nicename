@@ -17,7 +17,7 @@ export function isNumber(v: string): boolean {
 export function hasAmbigousHebon(
   str: string
 ): { result: boolean, patterns: string[] } {
-  const libs = [['si', 'shi'], ['ti', 'chi'], ['tu', 'tsu']]
+  const libs = [['si', 'shi'], ['ti', 'chi'], ['tu', 'tsu'], ['fu', 'hu']]
   for (var i = 0; i < libs.length; i++) {
     const ps = libs[i]
     if (ps.some(p => str.indexOf(p) >= 0)) {

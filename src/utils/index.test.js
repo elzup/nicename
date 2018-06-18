@@ -28,4 +28,8 @@ test('hasAmbigousHebon', () => {
     result: true,
     patterns: ['ti', 'chi'],
   })
+  expect(m.hasAmbigousHebon('full')).toEqual({
+    result: true,
+    patterns: ['fu', 'hu'],
+  })
 })
