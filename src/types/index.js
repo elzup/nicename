@@ -1,9 +1,15 @@
 // @flow
 
 export type Rank = 'C' | 'B' | 'A' | 'S'
+export type Hint = {
+  indexStart: number,
+  indexEnd: number,
+  message: string,
+}
 export type JudgeResult = {
   rank: Rank,
-  help: string,
+  message: string,
+  hints: Hint[],
 }
 
 export type JudgeInfo = {

@@ -9,7 +9,8 @@ Array [
       "notice": "「shi」や「si」は h を入れるかどうかを覚えにくい。",
     },
     "result": Object {
-      "help": "入っていない",
+      "hints": Array [],
+      "message": "入っていない",
       "rank": "S",
     },
   },
@@ -20,7 +21,8 @@ Array [
       "notice": "「shi」や「si」は h を入れるかどうかを覚えにくい。",
     },
     "result": Object {
-      "help": "「si」と「shi」は間違えやすい",
+      "hints": Array [],
+      "message": "「si」と「shi」は間違えやすい",
       "rank": "A",
     },
   },
@@ -36,7 +38,8 @@ Array [
       "notice": "表示しやすい。覚えやすい。",
     },
     "result": Object {
-      "help": "6文字以下である",
+      "hints": Array [],
+      "message": "6文字以下である",
       "rank": "S",
     },
   },
@@ -47,7 +50,8 @@ Array [
       "notice": "表示しやすい。覚えやすい。",
     },
     "result": Object {
-      "help": "7文字以上10文字以下である",
+      "hints": Array [],
+      "message": "7文字以上10文字以下である",
       "rank": "A",
     },
   },
@@ -58,7 +62,8 @@ Array [
       "notice": "表示しやすい。覚えやすい。",
     },
     "result": Object {
-      "help": "10文字以上20文字以下である",
+      "hints": Array [],
+      "message": "10文字以上20文字以下である",
       "rank": "B",
     },
   },
@@ -69,7 +74,8 @@ Array [
       "notice": "表示しやすい。覚えやすい。",
     },
     "result": Object {
-      "help": "21文字以上である",
+      "hints": Array [],
+      "message": "21文字以上である",
       "rank": "C",
     },
   },
@@ -85,7 +91,8 @@ Array [
       "notice": "5文字以下だと登録できないサイトがある。",
     },
     "result": Object {
-      "help": "6文字以上である",
+      "hints": Array [],
+      "message": "6文字以上である",
       "rank": "S",
     },
   },
@@ -96,7 +103,8 @@ Array [
       "notice": "5文字以下だと登録できないサイトがある。",
     },
     "result": Object {
-      "help": "4,5文字である",
+      "hints": Array [],
+      "message": "4,5文字である",
       "rank": "A",
     },
   },
@@ -107,7 +115,8 @@ Array [
       "notice": "5文字以下だと登録できないサイトがある。",
     },
     "result": Object {
-      "help": "3文字以下である",
+      "hints": Array [],
+      "message": "3文字以下である",
       "rank": "C",
     },
   },
@@ -123,7 +132,8 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "help": "入っていない",
+      "hints": Array [],
+      "message": "入っていない",
       "rank": "S",
     },
   },
@@ -134,7 +144,8 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "help": "1個ある",
+      "hints": Array [],
+      "message": "1個ある",
       "rank": "A",
     },
   },
@@ -145,7 +156,8 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "help": "2個ある",
+      "hints": Array [],
+      "message": "2個ある",
       "rank": "B",
     },
   },
@@ -156,7 +168,8 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "help": "3個以上ある",
+      "hints": Array [],
+      "message": "3個以上ある",
       "rank": "C",
     },
   },
@@ -172,7 +185,8 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "eより前である",
+      "hints": Array [],
+      "message": "eより前である",
       "rank": "S",
     },
   },
@@ -183,7 +197,8 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "e以降かつlより前である",
+      "hints": Array [],
+      "message": "e以降かつlより前である",
       "rank": "A",
     },
   },
@@ -194,7 +209,8 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "l以降かつsより前である",
+      "hints": Array [],
+      "message": "l以降かつsより前である",
       "rank": "B",
     },
   },
@@ -205,7 +221,8 @@ Array [
       "notice": "リストアップで上に出やすい。",
     },
     "result": Object {
-      "help": "s以降である",
+      "hints": Array [],
+      "message": "s以降である",
       "rank": "C",
     },
   },

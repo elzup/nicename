@@ -11,11 +11,11 @@ export const lengthShortJudge: Judge = {
   },
   judge: name => {
     if (name.length >= 6) {
-      return { rank: 'S', help: '6文字以上である' }
+      return { rank: 'S', message: '6文字以上である', hints: [] }
     } else if (name.length >= 4) {
-      return { rank: 'A', help: '4,5文字である' }
+      return { rank: 'A', message: '4,5文字である', hints: [] }
     } else {
-      return { rank: 'C', help: '3文字以下である' }
+      return { rank: 'C', message: '3文字以下である', hints: [] }
     }
   },
 }
@@ -29,13 +29,13 @@ export const lengthLongJudge: Judge = {
   judge: name => {
     // TODO: テキトーなしきい値。基準がほしい
     if (name.length <= 6) {
-      return { rank: 'S', help: '6文字以下である' }
+      return { rank: 'S', message: '6文字以下である', hints: [] }
     } else if (name.length <= 10) {
-      return { rank: 'A', help: '7文字以上10文字以下である' }
+      return { rank: 'A', message: '7文字以上10文字以下である', hints: [] }
     } else if (name.length <= 20) {
-      return { rank: 'B', help: '10文字以上20文字以下である' }
+      return { rank: 'B', message: '10文字以上20文字以下である', hints: [] }
     } else {
-      return { rank: 'C', help: '21文字以上である' }
+      return { rank: 'C', message: '21文字以上である', hints: [] }
     }
   },
 }
@@ -49,13 +49,13 @@ export const stringOrderJudge: Judge = {
   judge: name => {
     const first = name[0].toLowerCase()
     if (first < 'e') {
-      return { rank: 'S', help: 'eより前である' }
+      return { rank: 'S', message: 'eより前である', hints: [] }
     } else if (first < 'l') {
-      return { rank: 'A', help: 'e以降かつlより前である' }
+      return { rank: 'A', message: 'e以降かつlより前である', hints: [] }
     } else if (first < 's') {
-      return { rank: 'B', help: 'l以降かつsより前である' }
+      return { rank: 'B', message: 'l以降かつsより前である', hints: [] }
     } else {
-      return { rank: 'C', help: 's以降である' }
+      return { rank: 'C', message: 's以降である', hints: [] }
     }
   },
 }
@@ -70,13 +70,13 @@ export const signCountJudge: Judge = {
   judge: name => {
     const c = utils.countSignChar(name)
     if (c === 0) {
-      return { rank: 'S', help: '入っていない' }
+      return { rank: 'S', message: '入っていない', hints: [] }
     } else if (c === 1) {
-      return { rank: 'A', help: '1個ある' }
+      return { rank: 'A', message: '1個ある', hints: [] }
     } else if (c === 2) {
-      return { rank: 'B', help: '2個ある' }
+      return { rank: 'B', message: '2個ある', hints: [] }
     } else {
-      return { rank: 'C', help: '3個以上ある' }
+      return { rank: 'C', message: '3個以上ある', hints: [] }
     }
   },
 }
@@ -90,11 +90,12 @@ export const AmbiguityJudge: Judge = {
   judge: name => {
     const res = utils.hasAmbigousHebon(name)
     if (!res.result) {
-      return { rank: 'S', help: '入っていない' }
+      return { rank: 'S', message: '入っていない', hints: [] }
     }
     return {
       rank: 'A',
-      help: `${res.patterns.map(v => `「${v}」`).join('と')}は間違えやすい`,
+      message: `${res.patterns.map(v => `「${v}」`).join('と')}は間違えやすい`,
+      hints: [],
     }
   },
 }
