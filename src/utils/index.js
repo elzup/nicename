@@ -1,11 +1,13 @@
 // @flow
 
-export function countSignChar(str: string) {
+export function signCharPositions(str: string): number[] {
   return str
     .toLowerCase()
     .split('')
-    .filter(isSignChar).length
+    .map((v, k) => (isSignChar(v) ? k : -1))
+    .filter(v => v !== -1)
 }
+
 export function isSignChar(v: string): boolean {
   return '~'.indexOf(v) !== -1 || (v < 'a' && !isNumber(v))
 }

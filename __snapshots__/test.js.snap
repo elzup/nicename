@@ -144,7 +144,13 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "hints": Array [],
+      "hints": Array [
+        Object {
+          "last": 1,
+          "message": "記号",
+          "start": 1,
+        },
+      ],
       "message": "1個ある",
       "rank": "A",
     },
@@ -156,7 +162,18 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "hints": Array [],
+      "hints": Array [
+        Object {
+          "last": 2,
+          "message": "記号",
+          "start": 2,
+        },
+        Object {
+          "last": 5,
+          "message": "記号",
+          "start": 5,
+        },
+      ],
       "message": "2個ある",
       "rank": "B",
     },
@@ -168,7 +185,23 @@ Array [
       "notice": "記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。",
     },
     "result": Object {
-      "hints": Array [],
+      "hints": Array [
+        Object {
+          "last": 1,
+          "message": "記号",
+          "start": 1,
+        },
+        Object {
+          "last": 2,
+          "message": "記号",
+          "start": 2,
+        },
+        Object {
+          "last": 3,
+          "message": "記号",
+          "start": 3,
+        },
+      ],
       "message": "3個以上ある",
       "rank": "C",
     },

@@ -1,6 +1,6 @@
 // @flow
 
-import type { Judge, JudgeResult, Rank } from './types'
+import type { Judge, JudgeResult, Rank, Hint } from './types'
 import * as utils from './utils'
 
 export const lengthShortJudge: Judge = {
@@ -68,15 +68,17 @@ export const signCountJudge: Judge = {
       '記号はユーザ名に使えない事が多い。ドメイン名やURLで使えないことが多い。',
   },
   judge: name => {
-    const c = utils.countSignChar(name)
+    const ps = utils.signCharPositions(name)
+    const c = ps.length
+    const hints: Hint[] = ps.map(n => ({ start: n, last: n, message: '記号' }))
     if (c === 0) {
-      return { rank: 'S', message: '入っていない', hints: [] }
+      return { rank: 'S', message: '入っていない', hints }
     } else if (c === 1) {
-      return { rank: 'A', message: '1個ある', hints: [] }
+      return { rank: 'A', message: '1個ある', hints }
     } else if (c === 2) {
-      return { rank: 'B', message: '2個ある', hints: [] }
+      return { rank: 'B', message: '2個ある', hints }
     } else {
-      return { rank: 'C', message: '3個以上ある', hints: [] }
+      return { rank: 'C', message: '3個以上ある', hints }
     }
   },
 }

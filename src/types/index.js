@@ -2,8 +2,8 @@
 
 export type Rank = 'C' | 'B' | 'A' | 'S'
 export type Hint = {
-  indexStart: number,
-  indexEnd: number,
+  start: number,
+  last: number,
   message: string,
 }
 export type JudgeResult = {

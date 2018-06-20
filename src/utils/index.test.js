@@ -1,10 +1,10 @@
 import * as m from '.'
 
 test('countSignChar', () => {
-  expect(m.countSignChar('abc.*-')).toEqual(3)
-  expect(m.countSignChar('Z-=___Z')).toEqual(5)
-  expect(m.countSignChar('`~!@#$%^&*()_+')).toEqual(14)
-  expect(m.countSignChar('12345')).toEqual(0)
+  expect(m.signCharPositions('abc.*-')).toEqual([3, 4, 5])
+  expect(m.signCharPositions('Z-=___Z')).toEqual([1, 2, 3, 4, 5])
+  expect(m.signCharPositions('`~!@#$%^&*()_+')).toEqual([...Array(14).keys()])
+  expect(m.signCharPositions('12345')).toEqual([])
 })
 test('countSignChar', () => {
   expect(m.isSignChar('~')).toEqual(true)
