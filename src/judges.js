@@ -92,12 +92,17 @@ export const AmbiguityJudge: Judge = {
   judge: name => {
     const res = utils.hasAmbigousHebon(name)
     if (!res.result) {
-      return { rank: 'S', message: '入っていない', hints: [] }
+      return { rank: 'S', message: '含まれていない', hints: [] }
     }
+    const hints = res.hits.map(hit => ({
+      start: hit.start,
+      last: hit.last,
+      message: hit.patterns.join('≒'),
+    }))
     return {
       rank: 'A',
-      message: `${res.patterns.map(v => `「${v}」`).join('と')}は間違えやすい`,
-      hints: [],
+      message: '含まれている',
+      hints,
     }
   },
 }
