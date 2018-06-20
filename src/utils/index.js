@@ -18,13 +18,21 @@ export function isNumber(v: string): boolean {
 
 export function hasAmbigousHebon(
   str: string
-): { result: boolean, patterns: string[] } {
+): {
+  result: boolean,
+  hits: { start: number, last: number, patterns: string[] }[],
+} {
   const libs = [['si', 'shi'], ['ti', 'chi'], ['tu', 'tsu'], ['fu', 'hu']]
+  const hits = []
   for (var i = 0; i < libs.length; i++) {
-    const ps = libs[i]
-    if (ps.some(p => str.indexOf(p) >= 0)) {
-      return { result: true, patterns: ps }
-    }
+    const patterns = libs[i]
+    patterns.forEach(p => {
+      const pos = str.indexOf(p)
+      if (pos === -1) {
+        return
+      }
+      hits.push({ start: pos, last: pos + p.length - 1, patterns })
+    })
   }
-  return { result: false, patterns: [] }
+  return { result: hits.length > 0, hits }
 }

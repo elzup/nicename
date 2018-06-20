@@ -15,21 +15,55 @@ test('countSignChar', () => {
 })
 
 test('hasAmbigousHebon', () => {
-  expect(m.hasAmbigousHebon('elzup')).toEqual({ result: false, patterns: [] })
+  expect(m.hasAmbigousHebon('elzup')).toEqual({ result: false, hits: [] })
   expect(m.hasAmbigousHebon('toshino')).toEqual({
     result: true,
-    patterns: ['si', 'shi'],
+    hits: [
+      {
+        start: 2,
+        last: 4,
+        patterns: ['si', 'shi'],
+      },
+    ],
   })
   expect(m.hasAmbigousHebon('tosino')).toEqual({
     result: true,
-    patterns: ['si', 'shi'],
+    hits: [
+      {
+        start: 2,
+        last: 3,
+        patterns: ['si', 'shi'],
+      },
+    ],
   })
   expect(m.hasAmbigousHebon('tucchi')).toEqual({
     result: true,
-    patterns: ['ti', 'chi'],
+    hits: [
+      {
+        start: 3,
+        last: 5,
+        patterns: ['ti', 'chi'],
+      },
+      {
+        start: 0,
+        last: 1,
+        patterns: ['tu', 'tsu'],
+      },
+    ],
   })
-  expect(m.hasAmbigousHebon('full')).toEqual({
+  expect(m.hasAmbigousHebon('hutoshi')).toEqual({
     result: true,
-    patterns: ['fu', 'hu'],
+    hits: [
+      {
+        start: 4,
+        last: 6,
+        patterns: ['si', 'shi'],
+      },
+      {
+        start: 0,
+        last: 1,
+        patterns: ['fu', 'hu'],
+      },
+    ],
   })
 })
