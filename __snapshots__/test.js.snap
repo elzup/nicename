@@ -10,7 +10,7 @@ Array [
     },
     "result": Object {
       "hints": Array [],
-      "message": "入っていない",
+      "message": "含まれていない",
       "rank": "S",
     },
   },
@@ -21,8 +21,14 @@ Array [
       "notice": "「shi」や「si」は h を入れるかどうかを覚えにくい。",
     },
     "result": Object {
-      "hints": Array [],
-      "message": "「si」と「shi」は間違えやすい",
+      "hints": Array [
+        Object {
+          "last": 4,
+          "message": "si≒shi",
+          "start": 2,
+        },
+      ],
+      "message": "含まれている",
       "rank": "A",
     },
   },
