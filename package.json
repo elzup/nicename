@@ -9,14 +9,14 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "7.6.4",
-    "@babel/core": "7.6.4",
-    "@babel/node": "7.6.3",
-    "@babel/preset-env": "7.6.3",
-    "@babel/preset-flow": "7.0.0",
+    "@babel/cli": "7.7.4",
+    "@babel/core": "7.7.4",
+    "@babel/node": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-flow": "7.7.4",
     "babel-jest": "24.9.0",
-    "flow-bin": "0.111.0",
-    "flow-copy-source": "2.0.8",
+    "flow-bin": "0.112.0",
+    "flow-copy-source": "2.0.9",
     "jest": "24.9.0"
   },
   "engines": {
